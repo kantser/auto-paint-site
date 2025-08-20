@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POPOV'S LEGASY Paintworks - Professional car painting</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Основной сайт -->
+    <div id="main-site">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <div class="logo">
+                        <h2>POPOV'S LEGASY Paintworks</h2>
+                    </div>
+                    <nav class="nav">
+                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#services" class="nav__link">Services</a>
+                        <a href="#portfolio" class="nav__link">Our work</a>
+                        <a href="#gallery" class="nav__link">Gallery</a>
+                        <a href="#contacts" class="nav__link">Contacts</a>
+                    </nav>
+                    <div class="header__phone">
+                        <span>+44 7889 670579</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Body repair Let's restore the shape of your car:</h1>
+                    <p class="hero__subtitle">Professional body repair for a flawless appearance</p>
+                    <p class="hero__description">
+                        We restore cars after accidents and perform local and full painting.
+                        We use modern equipment and high-quality materials.
+                    </p>
+                    <button class="btn btn--primary btn--lg hero__cta">Get a consultation</button>
+                </div>
+                <div class="hero__image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755619716/pplx_project_search_images/d0a84656f475bcef2d496f14c28458654de014ef.png" alt="Покрасочная камера AutoPaint Pro">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Our services</h2>
+                <div class="services__grid" id="services-grid">
+                    <!-- Services will be rendered here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Our work</h2>
+                <div class="portfolio__filters">
+                    <button class="filter-btn active" data-filter="all">All works</button>
+                    <button class="filter-btn" data-filter="Full painting">Full painting</button>
+                    <button class="filter-btn" data-filter="Local painting">Local painting</button>
+                    <button class="filter-btn" data-filter="Repair">Body repair</button>
+                </div>
+                <div class="portfolio__grid" id="portfolio-grid">
+                    <!-- Portfolio items will be rendered here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="gallery__grid" id="gallery-grid">
+                    <!-- Gallery items will be rendered here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h2 class="section-title">Contacts</h2>
+                <div class="contacts__content">
+                    <div class="contacts__info">
+                        <h3>Get in touch</h3>
+                        <div class="contact-item">
+                            <strong>Phone:</strong>
+                            <span>+44 7889 670579</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <span>info@autopaintpro.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Address:</strong>
+                            <span>2, Corporation Cottages, Carshalton Rd, Croydon, Mitcham CR4 4HJ</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Working hours:</strong>
+                            <span>Mon-Fri: 9:00-19:00, Sat: 10:00-16:00</span>
+                        </div>
+                    </div>
+                    <div class="contacts__form">
+                        <h3>Leave a request</h3>
+                        <form id="contact-form" class="form">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" class="form-control" placeholder="Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <select id="service" class="form-control" required>
+                                    <option value="">Select service</option>
+                                    <option value="Full painting">Full painting</option>
+                                    <option value="Local painting">Local painting</option>
+                                    <option value="Body repair">Body repair</option>
+                                    <option value="Disk painting">Disk painting</option>
+                                    <option value="Protective coatings">Protective coatings</option>
+                                    <option value="Polishing">Polishing</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" class="form-control" rows="4" placeholder="Describe your task"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Send request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__info">
+                        <h3>POPOV'S LEGASY Paintworks</h3>
+                        <p>Professional car painting studio since 2024</p>
+                        <div class="footer__social">
+                            <a href="https://instagram.com/autopaintpro" target="_blank">Instagram</a>
+                            <a href="https://wa.me/+44 7889 670579" target="_blank">WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="footer__contact">
+                        <p><strong>+44 7889 670579</strong></p>
+                        <p>info@autopaintpro.ru</p>
+                        <p>2, Corporation Cottages, Carshalton Rd, Croydon, Mitcham CR4 4HJ</p>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>&copy; Navitech 2025. All rights reserved.</p>
+                    <a href="#" onclick="showAdminLogin()" style="color: var(--color-text-secondary);">Admin panel</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="admin-panel" class="admin-panel hidden">
+        <!-- Admin Login -->
+        <div id="admin-login" class="admin-login">
+            <div class="container">
+                <div class="admin-login__form">
+                    <h2>Log in to the admin panel</h2>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <input type="text" id="admin-username" class="form-control" placeholder="Username" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="admin-password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Login</button>
+                        <button type="button" onclick="hideAdminPanel()" class="btn btn--outline btn--full-width">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Admin Dashboard -->
+        <div id="admin-dashboard" class="admin-dashboard hidden">
+            <header class="admin-header">
+                <div class="container">
+                    <div class="flex justify-between items-center">
+                        <h2>Admin panel POPOV'S LEGASY</h2>
+                        <button onclick="logout()" class="btn btn--outline">Logout</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container admin-content">
+                <nav class="admin-nav">
+                    <button class="admin-nav__btn active" onclick="showAdminSection('portfolio-admin')">Портфолио</button>
+                    <button class="admin-nav__btn" onclick="showAdminSection('gallery-admin')">Галерея</button>
+                    <button class="admin-nav__btn" onclick="showAdminSection('requests-admin')">Заявки</button>
+                    <button class="admin-nav__btn" onclick="showAdminSection('stats-admin')">Статистика</button>
+                </nav>
+
+                <!-- Portfolio Admin -->
+                <section id="portfolio-admin" class="admin-section">
+                    <h3>Portfolio management</h3>
+                    <button class="btn btn--primary" onclick="showAddPortfolioForm()">Add work</button>
+                    <div class="admin-items" id="admin-portfolio-list"></div>
+                </section>
+
+                <!-- Gallery Admin -->
+                <section id="gallery-admin" class="admin-section hidden">
+                    <h3>Gallery management</h3>
+                    <button class="btn btn--primary" onclick="showAddGalleryForm()">Add photo</button>
+                    <div class="admin-items" id="admin-gallery-list"></div>
+                </section>
+
+                <!-- Requests Admin -->
+                <section id="requests-admin" class="admin-section hidden">
+                    <h3>Requests from clients</h3>
+                    <div class="admin-items" id="admin-requests-list"></div>
+                </section>
+
+                <!-- Stats Admin -->
+                <section id="stats-admin" class="admin-section hidden">
+                    <h3>Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h4 id="portfolio-count">0</h4>
+                            <p>Works in portfolio</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4 id="gallery-count">0</h4>
+                            <p>Photos in gallery</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4 id="requests-count">0</h4>
+                            <p>Requests received</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for image viewing -->
+    <div id="image-modal" class="modal hidden">
+        <div class="modal__overlay" onclick="closeModal()"></div>
+        <div class="modal__content">
+            <button class="modal__close" onclick="closeModal()">&times;</button>
+            <img id="modal-image" src="" alt="">
+            <div id="modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Form Modal -->
+    <div id="form-modal" class="modal hidden">
+        <div class="modal__overlay" onclick="closeFormModal()"></div>
+        <div class="modal__content">
+            <button class="modal__close" onclick="closeFormModal()">&times;</button>
+            <div id="form-modal-content"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
